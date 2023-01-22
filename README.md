@@ -29,7 +29,7 @@ arbitrage opportunities for predefined number of pairs in newly mined blocks.
     * [`utils/arbitrage.py`](/utils/arbitrage.py) contains utils for all the arbitrage checking and calculations. It is the core file that you are going to work with.
     * [`utils/providers.py`](/utils/providers.py) is needed for batch requests functionality
     * [`utils/requests.py`](/utils/requests.py) contains functions for batch requests creation
-3. Use batch requests for the project. It is strongly recommended to register on [https://getblock.io/](https://getblock.io/) to get the API key for further usage of it as provider uri. 
+3. Use batch requests for the project. Unfortunately, [https://getblock.io/](https://getblock.io/) doesn't provide archive nodes in their free plan, but it is still recommended to use it in [`notes.ipynb`](/notes.ipynb) for deriving the pivot table of pairs. For archive nodes one can use [https://www.infura.io/](https://www.infura.io/) or [https://www.alchemy.com/](https://www.alchemy.com/). Archive nodes provide the functionality for extracting any smart contract data as of any past block, while full nodes (as [https://getblock.io/](https://getblock.io/)) keep this kind of data for the last 128 blocks.
 4. Note that python float precision may be inapplicable for the project. It is strongly recommended to work with floating point numbers via [decimal class](https://docs.python.org/3/library/decimal.html) to avoid precision errors.
 
 Good luck!
